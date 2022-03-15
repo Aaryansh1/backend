@@ -1,0 +1,67 @@
+[debug] [2022-03-15T12:31:38.929Z] ----------------------------------------------------------------------
+[debug] [2022-03-15T12:31:38.937Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js functions:shell
+[debug] [2022-03-15T12:31:38.938Z] CLI Version:   9.21.0
+[debug] [2022-03-15T12:31:38.939Z] Platform:      win32
+[debug] [2022-03-15T12:31:38.939Z] Node Version:  v14.17.2
+[debug] [2022-03-15T12:31:38.955Z] Time:          Tue Mar 15 2022 18:01:38 GMT+0530 (India Standard Time)
+[debug] [2022-03-15T12:31:38.955Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-03-15T12:31:38.963Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-03-15T12:31:39.132Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-03-15T12:31:39.133Z] > authorizing via signed-in user (aaryanshsharma8@gmail.com)
+[debug] [2022-03-15T12:31:39.133Z] [iam] checking project auth-dev-618a9 for permissions ["firebase.projects.get"]
+[debug] [2022-03-15T12:31:39.136Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-03-15T12:31:39.136Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-03-15T12:31:39.408Z] <<< HTTP RESPONSE 200 {"date":"Tue, 15 Mar 2022 12:31:40 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-03-15T12:31:39.431Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/auth-dev-618a9:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2022-03-15T12:31:40.079Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-03-15T12:31:40.079Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2022-03-15T12:31:41.099Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 15 Mar 2022 12:31:42 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1375","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-03-15T12:31:41.155Z] [functions] Using node@14 from host.
+[debug] [2022-03-15T12:31:41.157Z] defaultcredentials: writing to file C:\Users\Hp\AppData\Roaming\firebase\aaryanshsharma8_gmail_com_application_default_credentials.json
+[debug] [2022-03-15T12:31:41.160Z] DEBUG: Setting GAC to C:\Users\Hp\AppData\Roaming\firebase\aaryanshsharma8_gmail_com_application_default_credentials.json
+[debug] [2022-03-15T12:31:41.161Z] > refreshing access token with scopes: []
+[debug] [2022-03-15T12:31:41.162Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-03-15T12:31:41.446Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Tue, 15 Mar 2022 12:31:42 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-03-15T12:31:41.467Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/auth-dev-618a9/adminSdkConfig [none]
+[debug] [2022-03-15T12:31:43.532Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/auth-dev-618a9/adminSdkConfig 200
+[debug] [2022-03-15T12:31:43.532Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/auth-dev-618a9/adminSdkConfig {"projectId":"auth-dev-618a9","databaseURL":"https://auth-dev-618a9-default-rtdb.asia-southeast1.firebasedatabase.app","storageBucket":"auth-dev-618a9.appspot.com","locationId":"us-central"}
+[debug] [2022-03-15T12:31:43.564Z] [functions] Watching "C:\Users\Hp\Desktop\Start of the new project\react\maryadatextile\frontend\functions" for Cloud Functions...
+[debug] [2022-03-15T12:31:43.607Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2022-03-15T12:31:43.607Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2022-03-15T12:31:43.608Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2022-03-15T12:31:43.609Z] DEBUG: [worker-~diagnostic~-d432946d-2459-4793-9a19-374a4ac2ffd2]: Assigning socketPath: \\?\pipe\C:\Users\Hp\Desktop\Start of the new project\react\maryadatextile\frontend\functions\13524
+[debug] [2022-03-15T12:31:43.609Z] DEBUG: [worker-~diagnostic~-d432946d-2459-4793-9a19-374a4ac2ffd2]: BUSY
+[debug] [2022-03-15T12:31:44.043Z] DEBUG: [runtime-status] [13524] Functions runtime initialized. {"cwd":"C:\\Users\\Hp\\Desktop\\Start of the new project\\react\\maryadatextile\\frontend\\functions","node_version":"14.17.2"}
+[debug] [2022-03-15T12:31:44.044Z] DEBUG: [runtime-status] [13524] Disabled runtime features: undefined
+[debug] [2022-03-15T12:31:44.052Z] DEBUG: [runtime-status] [13524] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"C:\\Users\\Hp\\Desktop\\Start of the new project\\react\\maryadatextile\\frontend\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2022-03-15T12:31:44.060Z] DEBUG: [runtime-status] [13524] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"C:\\Users\\Hp\\Desktop\\Start of the new project\\react\\maryadatextile\\frontend\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2022-03-15T12:31:44.065Z] DEBUG: [runtime-status] [13524] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2022-03-15T12:31:44.068Z] DEBUG: [runtime-status] [13524] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"C:\\Users\\Hp\\Desktop\\Start of the new project\\react\\maryadatextile\\frontend\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2022-03-15T12:31:44.281Z] DEBUG: [runtime-status] [13524] Checked functions.config() {"config":{}}
+[debug] [2022-03-15T12:31:44.282Z] DEBUG: [runtime-status] [13524] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.16.0","resolution":"C:\\Users\\Hp\\Desktop\\Start of the new project\\react\\maryadatextile\\frontend\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2022-03-15T12:31:44.291Z] DEBUG: [runtime-status] [13524] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"C:\\Users\\Hp\\Desktop\\Start of the new project\\react\\maryadatextile\\frontend\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2022-03-15T12:31:44.292Z] DEBUG: [runtime-status] [13524] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"C:\\Users\\Hp\\Desktop\\Start of the new project\\react\\maryadatextile\\frontend\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2022-03-15T12:31:44.292Z] DEBUG: [runtime-status] [13524] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"C:\\Users\\Hp\\Desktop\\Start of the new project\\react\\maryadatextile\\frontend\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2022-03-15T12:31:44.301Z] DEBUG: [runtime-status] [13524] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.12.0","resolution":"C:\\Users\\Hp\\Desktop\\Start of the new project\\react\\maryadatextile\\frontend\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[warn] !  C:\Users\Hp\Desktop\Start of the new project\react\maryadatextile\frontend\functions\index.js:34
+
+
+
+SyntaxError: Unexpected end of input
+    at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+    at Module._compile (internal/modules/cjs/loader.js:1049:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at initializeRuntime (C:\Users\Hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:640:29)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async handleMessage (C:\Users\Hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:684:20) {"metadata":{"emulator":{"name":"functions"},"message":"C:\\Users\\Hp\\Desktop\\Start of the new project\\react\\maryadatextile\\frontend\\functions\\index.js:34\n\n\n\nSyntaxError: Unexpected end of input\n    at wrapSafe (internal/modules/cjs/loader.js:1001:16)\n    at Module._compile (internal/modules/cjs/loader.js:1049:27)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:14)\n    at Module.require (internal/modules/cjs/loader.js:974:19)\n    at require (internal/modules/cjs/helpers.js:92:18)\n    at initializeRuntime (C:\\Users\\Hp\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:640:29)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async handleMessage (C:\\Users\\Hp\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:684:20)"}}
+[warn] !  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2022-03-15T12:31:44.363Z] DEBUG: [worker-~diagnostic~-d432946d-2459-4793-9a19-374a4ac2ffd2]: exited
+[debug] [2022-03-15T12:31:44.363Z] DEBUG: [worker-~diagnostic~-d432946d-2459-4793-9a19-374a4ac2ffd2]: FINISHED
