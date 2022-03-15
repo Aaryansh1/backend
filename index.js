@@ -1,7 +1,7 @@
 const express =  require("express");
 const cors = require("cors");
 const stripe = require("stripe")('sk_test_51JrNivSAVIHHAkidrC7mYAU6PCaxZrc9pM71yLiQO69kKOEtrr7amcYlBSNOu2qxvCwYnp9PhNiHVIIv7Yz2hiNu00kSyBGQt8');
-
+require("dotenv").config();
 // API 
 
 // App config
@@ -29,6 +29,6 @@ app.post('/payments/create', async(request, response) => {
       }
 })
 // Listen command
-app.listen(3001,()=>{
+app.listen(process.env.PORT || 3001,()=>{
     console.log("Server running");
 })
